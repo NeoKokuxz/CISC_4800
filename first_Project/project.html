@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="As1.css">
+    <script src="As1.js"></script>
+    <title>BC-Project</title>
+    <style>
+        table {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="barItems">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./news.html">Updates</a></li>
+        <li><a class="active" href="./project.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <div class="welcomeDiv">
+        <h1>Welcome to BC-Mini-Github</h1>
+        <p>Project</p>
+    </div>
+    <div>
+        <p>If you like to submit your idea/project, please check out contact page for more.</p>
+        <p>Click on detail button to expand details for the idea/project</p>
+    </div>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <th>Name:</th>
+                <th>Idea/Project:</th>
+                <th>Date:</th>
+                <th>#Clicks:</th>
+                <th>details:</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>OpenCV for Traffic minotoring</td>
+                <td>02/15/20</td>
+                <th>0</th>
+                <td><button type="button" onclick="showDetails()">ClickMeToExpand</button><button type="button" onclick="changeColor()">DarkMode</button></td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Robotic research using C++/C#</td>
+                <td>02/16/20</td>
+                <th>0</th>
+                <td><button type="button" onclick="showDetails()">ClickMeToExpand</button><button type="button" onclick="changeColor()">DarkMode</button></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Programming with Swift13 to build iOS apps</td>
+                <td>02/17/20</td>
+                <th>0</th>
+                <td><button type="button" onclick="showDetails()">ClickMeToExpand</button><button type="button" onclick="changeColor()">DarkMode</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="detailDiv">
+        <p style="color: gray">Click button in the table/under detail to show more details here.</p>
+    </div>
+
+
+
+</body>
+
+</html>

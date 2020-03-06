@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="As1.css">
+    <script src="As1.js"></script>
+    <title>BC-Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <ul class="barItems">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./news.html">Updates</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a class="active" href="./contact.html">Contact</a></li>
+    </ul>
+
+    <div class="welcomeDiv">
+        <h1>Welcome to BC-Mini-Github</h1>
+        <p>Contact</p>
+    </div>
+    <div>
+        <p>Fill in the field with * to activate submit button.</p>
+    </div>
+    <div class="userInput">
+
+        <h1>Submit Form for project</h1>
+        <label>*First Name:</label><br>
+        <input type="text" id="fname" onkeyup="Check()" onkeypress="Check()" onkeydown="Check()" required /><br>
+        <label>*Last Name:</label><br>
+        <input type="text" id="lname" onkeyup="Check()" onkeypress="Check()" onkeydown="Check()" required /><br>
+        <label>Birthday:</label><br>
+        <input type="date" /><br>
+        <label>Gender:</label><br>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Secret</option>
+        </select><br>
+        <label>What school did you attend:</label><br>
+        <select multiple>
+            <option>Brooklyn College</option>
+            <option>Hunter College</option>
+            <option>Queens College</option>
+            <option>City Tech</option>
+            <option>City College</option>
+        </select><br>
+        <label>Year in College:</label><br>
+        <input type="number" /><br>
+        <label>Empid:</label><br>
+        <input type="number" data-max=3 maxlength=3 oninput="skipIfMax(this)" id="t1" /> -
+        <input type="number" data-max=1 maxlength=1 oninput="skipIfMax(this)" id="t2" /> -
+        <input type="tel" maxlength="4" id="t3" /> <br>
+        <label>Email:</label><br>
+        <input type="email6" /><br>
+        <label>Phone Number:</label><br>
+        <input type="tel" data-max=3 oninput="skipIfMax(this)" /> -
+        <input type="tel" data-max=3 oninput="skipIfMax(this)" /> -
+        <input type="tel" maxlength="4" /><br>
+        <label>Create Your Account Username:</label><br>
+        <input type="text" maxlength="10" id="usernameInput" />
+        <button type="button" onclick="validateUserName()">validateUserName</button>
+        <label id="usernameOutput"></label><br>
+        <label>Create Your Account Password:</label><br>
+        <input type="password" class="p1" id="c1" required /><br>
+        <label>Confirm password:</label><br>
+        <input type="password" class="p2" id="c2" required onkeydown="checkPassWord()" onkeypress="checkPassWord()"
+            onkeyup="checkPassWord()" /><br>
+        <label>Idea/Project title:</label><br>
+        <input type="text" id="pname" /><button type="button" onclick="toUpperCase()">Click here to convert
+            uppercase</button><br>
+        <label id="upperCaseLabel">PlaceHolder</label><br>
+        <label>Idea/Project description:</label><br>
+        <textarea rows="4" cols="50" placeholder="Enter Your idea/Project description here" id="details" required
+            maxlength="150"></textarea><br>
+        <label>Your experience with this site(1-10)</label>
+        <input type="range" min="1" max="10" id="myRange" class="slider">
+        <button type="button" id="checkButton" onclick="submit()" disabled="disabled">Submit</button><br>
+
+        <label id="test">1</label><br>
+        <label id="test1">2</label>
+
+    </div>
+
+    <div>
+        <h1>About your location</h1>
+        <label>Click Here to check your current location!</label>
+        <button onclick="getLocation()">Try It</button>
+        <p id="lat">Latitude:</p>
+        <p id="lon">Longitude:</p>
+    </div>
+    <div>
+        <h1>Google Map - Brooklyn College</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9733879772584!2d-73.95430168468434!3d40.63046885053645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0e68bf8bc1%3A0x487ac68137fac784!2sBrooklyn%20College!5e0!3m2!1sen!2sus!4v1582169305466!5m2!1sen!2sus"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+</body>
+
+</html>
