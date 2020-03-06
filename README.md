@@ -1,1 +1,1 @@
-# CISC_4800
+# CISC_4800 Individual / Group Project
