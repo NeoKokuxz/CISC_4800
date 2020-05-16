@@ -1,1 +1,1 @@
-# CISC_4800 Individual / Group Project
+# CISC_4800 Special Computer Science Topic
