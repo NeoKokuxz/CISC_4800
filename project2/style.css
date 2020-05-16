@@ -1,0 +1,15 @@
+.center {
+    margin: auto;
+    width: 30%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    overflow: auto;
+}
+
+.succ {
+    margin: auto;
+    width: 30%;
+    border: 3px solid royalblue;
+    padding: 10px;
+    overflow: auto;
+}
